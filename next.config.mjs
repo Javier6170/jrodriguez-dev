@@ -6,7 +6,10 @@ import rehypePrism from '@mapbox/rehype-prism'
 const nextConfig = {
   pageExtensions: ['jsx', 'mdx'],
   reactStrictMode: true,
-  swcMinify: true,
+  //swcMinify: true,
+  images: {
+    unoptimized: true,
+  },
   experimental: {
     newNextLinkBehavior: true,
     scrollRestoration: true,
